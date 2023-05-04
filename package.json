@@ -10,7 +10,8 @@
 		"clean": "rm dist/bundle.js",
 		"build-dev": "webpack --mode development",
 		"build-prod": "webpack --mode production",
-		"d": "webpack --mode development --watch"
+		"d": "webpack --mode development --watch",
+		"serve": "npx http-server ./dist -C certs/cert.pem  -K certs/key.pem -S"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.21.8",
